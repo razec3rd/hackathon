@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bisque">#FFFFE4C4</color>
+    <color name="antiquewhite">#FFEEDFCE</color>
+    <color name="dimgray">#FF6B6052</color>
+    <color name="darkgray">#FFB2A79A</color>
+    <color name="adarkgray">#FFABABAB</color>
 </resources>
