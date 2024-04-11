@@ -22,13 +22,86 @@
             android:fontFamily="monospace"
             android:text="CareerConnect"/>
     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posted Jobs"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv1"
+            android:textStyle="bold"
+            android:text="Urgent"/>
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cb1"
+            android:textStyle="bold"
+            android:text="Not Urgent"/>
 
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/cb2"
+            android:padding="20dp"
+            android:elevation="10dp"
+            android:ems="20"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_box_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25K Sign-on Bonus|Apply Now! CSR-Voice | Start Monday |HMO + Fixed weekends off! "/>
+        <TextView
+        android:id="@+id/tv3"
+        android:layout_below="@+id/tv2"
+        android:padding="20dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="30dp"
+        android:ems="20"
+        android:background="@drawable/round_box_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operations Admin Support (Virtual Assistant)"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_below="@+id/tv3"
+            android:padding="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="30dp"
+            android:ems="20"
+            android:background="@drawable/round_box_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25K Sign-on Bonus|Apply Now! CSR-Voice | Start Monday |HMO + Fixed weekends off! "/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_below="@+id/tv4"
+            android:padding="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="30dp"
+            android:ems="20"
+            android:background="@drawable/round_box_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25K Sign-on Bonus|Apply Now! CSR-Voice | Start Monday |HMO + Fixed weekends off! "/>
+    </RelativeLayout>
     <Button
         android:id="@+id/logout"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logout"
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:layout_marginRight="20dp"
         />
 
@@ -38,6 +111,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post A \nJob"
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:layout_marginRight="20dp"
         android:layout_toRightOf="@id/home"
         />
@@ -47,10 +122,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:layout_marginRight="20dp"
         android:layout_toRightOf="@id/logout"
         />
     <Button
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:id="@+id/profile"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"

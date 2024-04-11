@@ -8,6 +8,8 @@
     android:background="@color/bisque"
     tools:context=".EmployerDashboard">
     <Button
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save Changes"
@@ -66,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/et2"
-            android:text="Email"/>
+            android:text="Username"/>
         <EditText
             android:id="@+id/et3"
             android:layout_below="@id/tv3"
@@ -75,7 +77,7 @@
             android:padding="10dp"
             android:elevation="10dp"
             android:ems="10"
-            android:hint="Company Email Here"
+            android:hint="Username"
             android:background="@drawable/round_box_white"/>
         <TextView
             android:id="@+id/tv4"
@@ -97,6 +99,8 @@
 
     <Button
         android:id="@+id/logout"
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,6 +114,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post A \nJob"
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:layout_marginRight="20dp"
         android:layout_toRightOf="@id/home"
         />
@@ -119,6 +125,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:layout_marginRight="20dp"
         android:layout_toRightOf="@id/logout"
         />
@@ -128,6 +136,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Profile"
+        android:background="@drawable/round_box_white"
+        android:elevation="10dp"
         android:clickable="false"
         android:layout_toRightOf="@id/postjobs"
         />
