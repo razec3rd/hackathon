@@ -7,71 +7,57 @@
     android:layout_height="match_parent"
     android:background="@color/bisque"
     tools:context=".EmployerDashboard">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:layout_alignEnd="@id/profile">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/topleftlogo" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="20dp"
+            android:layout_marginTop="50dp"
             android:fontFamily="monospace"
-            android:text="CareerConnect"/>
+            android:textSize="30dp"
+            android:paddingLeft="150dp"
+            android:text="PROFILE"/>
     </LinearLayout>
 
     <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
         android:gravity="center">
-
-        <TextView
-        android:id="@+id/companyname"
-            android:layout_marginTop="10dp"
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-            android:maxLength="20"
-            android:ellipsize="end"
-            android:ems="10"
-
-            android:maxLines="1"
-            android:text="Your Company Name"
-            android:layout_marginRight="40dp"/>
-
-        <Button
-            android:id="@+id/edit1"
-            android:layout_toRightOf="@id/companyname"
+        android:text="Company Name"/>
+        <EditText
+            android:id="@+id/et1"
+            android:layout_below="@id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Edit"/>
-
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:hint="Company Name Here"
+            android:background="@drawable/round_box_white"/>
         <TextView
-            android:id="@+id/companydescription"
-            android:layout_marginTop="30dp"
+            android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLength="20"
-            android:ems="10"
-            android:text="Your Company Desc"
-            android:layout_below="@id/companyname"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:layout_marginRight="40dp"/>
-
-        <Button
-            android:id="@+id/edit2"
-            android:layout_below="@id/edit1"
-            android:layout_toRightOf="@id/companydescription"
+            android:layout_below="@id/et1"
+            android:text="Email"/>
+        <EditText
+            android:layout_below="@id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-
-            android:text="Edit">
-        </Button>
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:hint="Company Name Here"
+            android:background="@drawable/round_box_white"/>
 
     </RelativeLayout>
 
@@ -81,6 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logout"
+        android:layout_marginRight="20dp"
         />
 
     <Button
@@ -89,15 +76,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post A \nJob"
-        android:layout_toRightOf="@id/logout"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/home"
         />
     <Button
-        android:id="@+id/chckjobapplications"
+        android:id="@+id/home"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Job \n Applications"
-        android:layout_toRightOf="@id/postjobs"
+        android:text="Home"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/logout"
         />
     <Button
         android:id="@+id/profile"
@@ -106,7 +95,7 @@
         android:layout_height="wrap_content"
         android:text="Profile"
         android:clickable="false"
-        android:layout_toRightOf="@id/chckjobapplications"
+        android:layout_toRightOf="@id/postjobs"
         />
 
 </RelativeLayout>

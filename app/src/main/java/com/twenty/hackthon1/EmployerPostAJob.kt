@@ -15,7 +15,7 @@ class EmployerPostAJob : AppCompatActivity() {
 
         val logout: Button = findViewById(R.id.logout)
         val postJob: Button = findViewById(R.id.postjobs)
-        val jobapp: Button = findViewById(R.id.chckjobapplications)
+        val home: Button = findViewById(R.id.home)
         val profile: Button = findViewById(R.id.profile)
 
         postJob.isEnabled = false
@@ -30,8 +30,8 @@ class EmployerPostAJob : AppCompatActivity() {
             startActivity(intent)
         }
 
-        jobapp.setOnClickListener(){
-            intent = Intent(this, EmployerJobApplications::class.java)
+        home.setOnClickListener(){
+            intent = Intent(this, EmployerDashboard::class.java)
             startActivity(intent)
         }
 

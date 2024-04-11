@@ -18,8 +18,10 @@ class EmployerDashboard : AppCompatActivity() {
 
         val logout: Button = findViewById(R.id.logout)
         val postJob: Button = findViewById(R.id.postjobs)
-        val jobapp: Button = findViewById(R.id.chckjobapplications)
+        val home: Button = findViewById(R.id.home)
         val profile: Button = findViewById(R.id.profile)
+
+        home.isEnabled = false
 
         logout.setOnClickListener(){
             intent = Intent(this, MainActivity::class.java)
@@ -31,10 +33,6 @@ class EmployerDashboard : AppCompatActivity() {
             startActivity(intent)
         }
 
-        jobapp.setOnClickListener(){
-            intent = Intent(this, EmployerJobApplications::class.java)
-            startActivity(intent)
-        }
 
         profile.setOnClickListener(){
             intent = Intent(this, EmployerProfile::class.java)

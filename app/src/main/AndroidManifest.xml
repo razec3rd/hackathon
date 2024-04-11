@@ -27,9 +27,6 @@
             android:name=".EmployerPostAJob"
             android:exported="false" />
         <activity
-            android:name=".EmployerJobApplications"
-            android:exported="false" />
-        <activity
             android:name=".EmployerProfile"
             android:exported="false" />
         <activity

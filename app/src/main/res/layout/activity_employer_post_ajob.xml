@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logout"
+        android:layout_marginRight="20dp"
         />
 
     <Button
@@ -36,17 +37,18 @@
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="false"
         android:text="Post A \nJob"
-        android:layout_toRightOf="@id/logout"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/home"
         />
     <Button
-        android:id="@+id/chckjobapplications"
+        android:id="@+id/home"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Job \n Applications"
-        android:layout_toRightOf="@id/postjobs"
+        android:text="Home"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/logout"
         />
     <Button
         android:id="@+id/profile"
@@ -54,7 +56,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Profile"
-        android:layout_toRightOf="@id/chckjobapplications"
+        android:clickable="false"
+        android:layout_toRightOf="@id/postjobs"
         />
 
 </RelativeLayout>
