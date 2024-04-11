@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">hackthon1</string>
     <string name="signUp">
-        Don't have an account yet? <u>Sign up</u>
+        Don\'t have an account yet? <u>Sign up</u>
     </string>
     <string name="signIn">
         Already have an account? <u>Sign In</u>
