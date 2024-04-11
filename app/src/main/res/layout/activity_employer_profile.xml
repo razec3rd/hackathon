@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bisque"
+    tools:context=".EmployerDashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topleftlogo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:fontFamily="monospace"
+            android:text="CareerConnect"/>
+    </LinearLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+        android:id="@+id/companyname"
+            android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:ellipsize="end"
+            android:ems="10"
+
+            android:maxLines="1"
+            android:text="Your Company Name"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/edit1"
+            android:layout_toRightOf="@id/companyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Edit"/>
+
+        <TextView
+            android:id="@+id/companydescription"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:ems="10"
+            android:text="Your Company Desc"
+            android:layout_below="@id/companyname"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/edit2"
+            android:layout_below="@id/edit1"
+            android:layout_toRightOf="@id/companydescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="Edit">
+        </Button>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        />
+
+    <Button
+        android:id="@+id/postjobs"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post A \nJob"
+        android:layout_toRightOf="@id/logout"
+        />
+    <Button
+        android:id="@+id/chckjobapplications"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Job \n Applications"
+        android:layout_toRightOf="@id/postjobs"
+        />
+    <Button
+        android:id="@+id/profile"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:clickable="false"
+        android:layout_toRightOf="@id/chckjobapplications"
+        />
+
+</RelativeLayout>
